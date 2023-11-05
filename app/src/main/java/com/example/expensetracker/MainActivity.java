@@ -56,7 +56,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+         Button faqButton = findViewById(R.id.btn_faq);
+        faqButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent faqIntent = new Intent(MainActivity.this, FAQActivity.class);
+                startActivity(faqIntent);
+            }
+        });
     }
+
+           
 
     /*@Override
     protected void onStart() {
@@ -126,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
             pieEntryList.add(new PieEntry(expense,"Expense"));
             colorList.add(getResources().getColor(R.color.red));
         }
-        PieDataSet pieDataSet = new PieDataSet(pieEntryList,"Income and Expense");
+        PieDataSet pieDataSet = new PieDataSet(pieEntryList, "Balance: RM" + (income-expense));
         pieDataSet.setColors(colorList);
         pieDataSet.setValueTextColor(getResources().getColor(R.color.white));
         PieData pieDat= new PieData(pieDataSet);
