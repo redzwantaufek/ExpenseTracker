@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".faq">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/faq_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/faq_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/expense" />
+
+        <TextView
+            android:id="@+id/faq_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ Information"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/faq_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. How to add income?\n
+= User need to click add income. After that, user need to fill in the income details and click check icon.\n
+2. How to add expense?\n
+= User need to click add expense. After that, user need to fill in the expense details and click check icon.\n
+3. How to see the chart?\n
+= User need to click the chart and it will display the details about expense and income.\n"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/about_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Tracker App is a simple and easy-to-use app that helps you track your spending. You can:\n\n
+1. Track all of your expenses, including cash, credit cards, and debit cards.\n
+2. Categorize your expenses to see where your money is going.\n
+3. Set budget goals and track your progress.\n
+4. Generate reports to see your spending trends over time.\n\n
+Expense Tracker App is the perfect tool for anyone who wants to get control of their finances and save money."
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+    </LinearLayout>
+
+</ScrollView>

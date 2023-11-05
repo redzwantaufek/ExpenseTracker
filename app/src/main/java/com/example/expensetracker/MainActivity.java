@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.expensetracker.databinding.ActivityMainBinding;
@@ -57,11 +58,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-         Button faqButton = findViewById(R.id.btn_faq);
+        Button faqButton = findViewById(R.id.btn_faq);
         faqButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent faqIntent = new Intent(MainActivity.this, FAQActivity.class);
+                Intent faqIntent = new Intent(MainActivity.this, faq.class);
                 startActivity(faqIntent);
             }
         });
